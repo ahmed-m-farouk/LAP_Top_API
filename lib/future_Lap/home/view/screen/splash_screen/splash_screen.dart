@@ -2,16 +2,16 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'package:post_login/future/home/view/screens/Login_sceen/Login/login_screen.dart';
+import 'package:post_login/future_Lap/home/view/screen/screen_LapTop/screen_lap.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class SplashScreenLap extends StatefulWidget {
+  const SplashScreenLap({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashScreenLap> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreenLap> {
   @override
   void initState() {
     super.initState();
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => LoginScreen(),
+              builder: (context) => ScreenLap(),
             ));
       },
     );
